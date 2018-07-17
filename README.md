@@ -1,7 +1,10 @@
-Idea Plugin Hello World Demo
-=======================
+Idea Plugin Component Init Demo
+===============================
+
+Init code when IDEA is starting, and also provide some functions across actions.
 
 Run plugin in IDEA:
+-------------------
 
 ```
 ./gradlew runIde

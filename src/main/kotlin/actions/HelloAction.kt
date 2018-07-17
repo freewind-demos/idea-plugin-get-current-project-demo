@@ -2,12 +2,13 @@ package actions
 
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
-import com.intellij.openapi.ui.Messages
+import example.MyComponent
 
 class HelloAction : AnAction() {
 
     override fun actionPerformed(event: AnActionEvent) {
-        Messages.showInfoMessage("Hello from my plugin", "Hello")
+        val component = event.project?.getComponent(MyComponent::class.java) as MyComponent
+        component.helloInComponent()
     }
 
 }
