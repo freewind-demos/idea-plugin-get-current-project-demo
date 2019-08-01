@@ -1,7 +1,5 @@
-Idea Plugin Component Init Demo
-===============================
-
-Init code when IDEA is starting, and also provide some functions across actions.
+Idea Plugin Get Current Project Demo
+====================================
 
 Run plugin in IDEA:
 -------------------

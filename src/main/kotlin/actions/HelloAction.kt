@@ -7,8 +7,8 @@ import example.MyComponent
 class HelloAction : AnAction() {
 
     override fun actionPerformed(event: AnActionEvent) {
-        val component = event.project?.getComponent(MyComponent::class.java) as MyComponent
-        component.helloInComponent()
+        val currentProject = event.project!!
+        println("Current project from Action: $currentProject")
     }
 
 }
